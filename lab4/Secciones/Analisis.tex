@@ -1,14 +1,14 @@
 \section{Análisis y dificultades}
 \subsection{Análisis}
 Las mediciones son sacadas en un entorno cerrado con puertas y diferentes objetos alrededor, y el tipo de aplicación para lo que es sacado es para conocer de manera empírica como se comporta la potencia de la señal recibida mientras el receptor se va alejando del aparato transmisor de la señal en un entorno cerrado, qué tipo de perdidas se sufren y con respecto a que puede causar más perdidas por multitrayectoria.\\
-Como se puede observar en la figura \ref{3m} entre 1 a 3 metros hay una puerta en el entorno, y, por otra parte, en la figura \ref{fig:grafico} desde él 1.84 metros a 1.96 metros hay una subida de decibelios, que es causada por el entorno, en este caso la puerta al estar abierta hizo que la multitrayectoria y las señales destructivas sean menores a las que había en el sector de la pared, cabe recalcar que en toda  la medición hecha no pasaban muchas personas, unas 2 o 3 como máximo a veces, lo que causaba oscilación en la potencia recibida en 7 dB.
+Como se puede observar en la figura \ref{3m} entre 1 a 3 metros hay una puerta en el entorno, y, por otra parte, en la figura \ref{fig:grafico} desde él 1.84 metros a 1.96 metros hay una subida de decibelios, que es causada por el entorno, en este caso la puerta al estar abierta hizo que la multitrayectoria y las señales destructivas sean menores a las que había en el sector de la pared, cabe recalcar que en toda la medición hecha no pasaban muchas personas, unas 2 o 3 como máximo a veces, lo que causaba oscilación en la potencia recibida en 7 dB.
 
 Referente a los resultados obtenidos, estos se rigen bajo el modelo log-shadowing, como se menciona anteriormente, este modelo permite predecir la perdida de propagación en diferentes entornos, este se rige bajo la siguiente ecuación.
 
  \begin{figure}[H]
         \centering
         \includegraphics[width=\linewidth]{Imagenes/imagen_2022-11-08_164022665.png}
-        \caption{Ecuacion log-shadowing}
+        \caption{Ecuación log-shadowing}
         \label{log}
   \end{figure}
    Los parámetros son los siguientes
@@ -21,12 +21,9 @@ Referente a los resultados obtenidos, estos se rigen bajo el modelo log-shadowin
    
 \end{itemize}
  Esta ecuación permite calcular la perdida de trayecto siempre y cuando satisfaga que la distancia inicial sea menor a la distancia de campo lejano.
+
   
-  
-  Bajo este modelo y los resultados obtenidos, se puede realizar las siguientes comparaciones en distintos escenarios.
-  
-  \begin{itemize}
-  \item 
+  Empleando la ecuación del modelo log-shadowing en conjunto con las potencias obtenidas, se calcula el exponente de perdida que da como resultado 2.2, este valor se compara con los resultados de la siguiente tabla, la cual representa valores del exponente de perdida para diferentes entornos.
   
    \begin{figure}[H]
         \centering
@@ -35,18 +32,19 @@ Referente a los resultados obtenidos, estos se rigen bajo el modelo log-shadowin
         \label{transmisor}
   \end{figure}
   
+  Como se verifica en la tabla, el exponente resultante corresponde al rango proporcionado por $"$Obstructed in Factory$"$, este factor hace referencia a las perdidas de propagación que se presentan en un sistema producto de obstrucciones, atenuaciones o incluso problemas en el equipo donde se están realizando las medidas. En comparación a otros entornos, en donde presentan menor exponente, esto se puede atribuir a que como se menciona anteriormente, no poseen una mayor perdida en comparación al entorno que se emplea en esta actividad, esto se refleja en el entorno de $"$Free Space$"$ donde su exponente es de 2 y también el entorno de $"$Inside a building-Line Sight$"$, el cual posee el rango más bajo de perdida.
  
  
- \item En la mayoría de modelos presentes en la propagación de gran escala requieren de un proceso de simulación que se vuelve complejo para el operario, el modelo log-shadowing es una respuesta para poder simplificar tales modelos debido a que es una respuesta sistémica ya que  solo depende del exponente de perdida presentado en la comparación anterior.
-  \end{itemize}
+
+
   
   \subsection{Dificultades}
   
-  En la experiencia, surgieron algunas dificultades que influyeron a la hora de tomar los datos, tales dificultades  fueron:
+ En la experiencia, surgieron algunas dificultades que influyeron a la hora de tomar los datos, tales dificultades fueron:
   
   \begin{itemize}
-      \item El entorno donde se ejerció la medición fue muy acotado ya que se necesito tomar las ultimas medidas en las escaleras del quinto piso de la universidad, presentando variaciones en algunos casos sumamente mayores.
-      \item Durante la toma lejana de datos las personas fueron uno de los factores de variaciones muy grandes, tanto de aumento de señal como disminución de hasta $\pm$ 7dB en la muestra.
+      \item El entorno donde se ejerció la medición fue muy acotado, ya que se necesitó tomar las últimas medidas en las escaleras del quinto piso de la universidad, presentando variaciones en algunos casos sumamente mayores.
+      \item Durante la toma lejana de datos, las personas fueron uno de los factores de variaciones muy grandes, tanto de aumento de señal como disminución de hasta $\pm$ 7 dB en la muestra.
   \end{itemize}
   
   
