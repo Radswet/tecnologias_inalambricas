@@ -1,0 +1,114 @@
+\documentclass[lettersize,journal]{IEEEtran}
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage[euler]{textgreek}
+\usepackage{cite}
+\usepackage{import}
+\usepackage{xcolor,listings}
+\usepackage{textcomp}
+\usepackage{comment}
+\usepackage{float}
+\usepackage{amsmath}
+
+\usepackage[scriptsize]{caption}
+
+\usepackage{blindtext}
+\usepackage{parskip}
+
+\usepackage{hyperref}
+
+\usepackage{subcaption}
+
+\newcommand{\un}[1]{\ensuremath{\ \mathrm{#1}}}
+
+\lstset{upquote=true}
+\definecolor{gray97}{gray}{.97}
+
+\lstdefinelanguage{Mat}{
+    frame=Ltb,
+    framerule=0pt,
+    aboveskip=0.5cm,
+    framextopmargin=15pt,
+    framexbottommargin=3pt,
+    framexleftmargin=0.4cm,
+    framesep=0pt,
+    rulesep=.4pt,
+    backgroundcolor=\color{gray97},
+    rulesepcolor=\color{white},
+    %
+    stringstyle=\ttfamily,
+    showstringspaces = false,
+    basicstyle=\small\ttfamily,
+    commentstyle=\color{gray45},
+    keywordstyle=\bfseries,
+    %
+    numbers=left,
+    numbersep=1pt,
+    numberstyle=\tiny,
+    numberfirstline = false,
+    breaklines=true
+}
+
+\hyphenation{op-tical net-works semi-conduc-tor IEEE-Xplore}
+% updated with editorial comments 8/9/2021
+
+\usepackage[backend=biber]{biblatex}
+\bibliography{refs}
+
+
+\let\clsCenter\Center\let\clsendCenter\endCenter
+\let\Center\undefined\let\endCenter\undefined
+\usepackage{ragged2e}
+\let\Center\clsCenter
+\let\endCenter\clsendCenter
+\begin{document}
+
+\title{Laboratorio 3: Efectos de propagación a gran escala }
+\author{Pablo Moraga, pablo.moraga@mail.udp.cl  \\
+Alex Parada, alex.parada@mail.udp.cl \\
+Fernando Vergara, fernando.vergara1@mail.udp.cl \\
+
+Escuela de Informática y Telecomunicaciones \\ \IEEEmembership{Universidad Diego Portales}
+        % <-this % stops a space
+%\thanks{This paper was produced by the IEEE Publication Technology Group. They are in Piscataway, NJ.}% <-this % stops a space
+%\thanks{Manuscript received April 19, 2021; revised August 16, 2021.}
+}
+
+% The paper headers
+%\markboth{CIT2111: Comunicaciones Digitales, Semestre I 2022}%
+%{Shell \MakeLowercase{\textit{et al.}}: A Sample Article Using IEEEtran.cls for IEEE Journals}
+
+%\IEEEpubid{0000--0000/00\$00.00~\copyright~2021 IEEE}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark.
+
+\maketitle
+
+\import{Secciones/}{Introduccion.tex}
+
+\import{Secciones/}{Metodologia.tex}
+
+\import{Secciones/}{Resultados.tex}
+\import{Secciones/}{Analisis.tex}
+
+
+\import{Secciones/}{Conclusiones.tex}
+
+\import{Secciones/}{Anexos.tex}
+
+%\newpage
+    
+
+\printbibliography
+
+
+\end{document}
+
